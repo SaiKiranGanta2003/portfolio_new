@@ -1,0 +1,518 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.nav{
+    height:60px;
+    background-color: black;
+    position: sticky;
+    top:0;
+    /* z-index: 300
+; */
+    z-index: 300;
+    /* position: fix    ed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav>ul>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.nav>ul>a:hover{
+
+    color: rgb(17, 0, 255);
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+.home{
+    background-image:url('https://img.freepik.com/free-vector/seamless-gold-rhombus-grid-pattern-black-background_53876-97589.jpg?size=626&ext=jpg&uid=R161445138&ga=GA1.1.1362165787.1725221777&semt=ais_hybrid');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    color: white;
+}
+.div1{
+    padding: 30px;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.name{
+    font-size: 70px;
+}
+.para{
+    font-size:  25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 7px blue;
+}
+/* .resume{
+    padding: 5px 10px;
+    /* width:20%; 
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+} */
+.resume-btn{
+    color: white;
+    /* padding: 3px; */
+    padding: 3px 20px;
+    text-decoration: none;
+    /* padding: 5px 10px; */
+    /* width:; */
+    border-radius: 25px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid blue;
+
+}
+
+.resume-btn:hover{
+    background-color: white;
+    color: blue;
+    /* font-weight: 700; */
+    border: 2px solid blue;
+    transition: 0.5s ease   ;
+}
+
+
+.div2{
+    height: 100%;
+    width: 50%;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    text-align: center;
+    /* border-radius: 120px; */
+}
+.overlay:hover{
+    opacity: 1;
+    transition: 0.5s ease;  
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.myPhoto{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+   
+}
+.link-img{
+    text-decoration: none;
+
+    color: white;
+}
+#about{
+    width:100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding:40px 70px;
+    /* background-color: gray; */
+    
+}
+.about-para{
+    animation: fade linear ;
+    animation-timeline:view() ;
+    animation-range: entry 0% cover 20%;
+}
+.about-head{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: fade linear ;
+    animation-timeline:view() ;
+    animation-range: entry 0% cover 20%;
+}
+
+.Education{
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=1060&t=st=1727248609~exp=1727249209~hmac=e9cc30ce34a81cdefd8c92bcf41150dfbe581631958f52635847e957fb7fa955');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 70px;
+    row-gap: 30px;
+}
+.edu-heading{
+    font-size: 30px;
+    color: white;
+}
+.edu-divs{
+    width: 70%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap:20px;
+    
+}
+.edu-div{
+    height: 350px;
+    width:300px;
+    overflow: hidden;
+    /* background-color: yellowgreen;    */
+    text-align: center;
+    color: white;
+    /* border: 2px solid black; */
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0%  cover 40%;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+#fig{
+    position: relative;
+    border-radius: 7px;
+    
+}
+
+.fig-overlay{
+    position: absolute;
+    height: 300px;
+    width:300px;
+    background-color: rgba(0, 0, 0,0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fig-overlay:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.edu-img{
+    height: 300px;
+    width:300px;
+    border-radius: 7px;
+    /* position: 11px 10px; */
+    object-fit: cover;
+}
+
+.skills{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(77, 133, 21, 0);
+    row-gap: 20px;
+    padding-bottom: 30px;
+    backdrop-filter: blur(10px);
+    /* border: 1px solid white; */
+}
+.skill-head{
+    font-size: 30px;
+    color: white;
+}
+.skill-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* background-color: pink; */
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.skill-fig{
+    height: 150px; 
+    /* width: 100px; */
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    /* background-color:rgb(0, 0, 0) ; */
+    overflow: hidden;
+    
+}
+.skill-fig:nth-child(odd){
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+}
+.skill-fig:nth-child(even){
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0%  cover 30%;
+}
+
+@keyframes appear1 {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+
+
+.skill-img{
+    height: 100px; 
+    width: 100px;
+    background-color: white;
+    object-fit: cover;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+
+}
+.skill-cap{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+}
+.skill-fig:hover{
+    background-color: rgba(0, 0, 0, 0.411);
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s ease;
+}
+
+.project-sec{
+    /* background-color: darkblue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 20px;
+    background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=996&t=st=1727249429~exp=1727250029~hmac=abdac3dd04e805df2f40f7f7bdd3fa624762697b633fbead030677d439f0ca2e');
+
+}
+.pro-head{
+    font-size: 30px;
+    color: white;
+}
+.projects{
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px
+}
+.project{
+    width: 350px;
+    height: 250px;
+    /* padding: 10px; */
+    border: 3px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    animation: fade linear ;
+    animation-timeline:view() ;
+    animation-range: entry 0% cover 20%;
+}
+.pro-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.717);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    row-gap: 10px;
+    color: #fff;
+    opacity: 0;
+}
+.pro-overlay:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.project-title{
+    font-size: 20px;
+}
+.project-para{
+    font-size: 13px;
+}
+.project-btn{
+    padding:3px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: blue;
+    font-weight: 600;
+}
+.project-img{
+    height: 220px;
+    width:300x;
+    background-color: white;
+    aspect-ratio: 16/11;
+}
+
+.contact-deatils{
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 40px;
+}
+.contact-head{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.contact{
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    column-gap: 30px;
+    padding: 10px;
+}
+i{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+i:hover{
+    color: rgb(30, 0, 255) ;
+    text-shadow: 2px 2px 10px rgb(120, 47, 255);
+}
+
+
+
+@media (max-width:1120px) {
+    .nav{height: 0px;
+        visibility: hidden;
+    }
+    .nav>ul>a{
+        display: block;
+        flex-direction: column;
+    }
+    .Education{
+        padding: 40px 0px;
+        width: 100%;
+    }
+    .edu-div{
+        width: 100%;
+    }
+    .home{
+        height: 100vh;
+    }
+    .div1{
+        width: 100%;
+        font-size: 20px;
+        /* background-color: yellow; */
+        text-align: ce;
+    }
+    .div2{
+       width: 0px;
+       opacity: 0;
+    }
+    .edu-divs{
+        width: 100%;
+    }
+    
+}
