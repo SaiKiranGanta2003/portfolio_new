@@ -10,7 +10,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 .nav{
-    height:60px;
+    height:40px;
     background-color: black;
     position: sticky;
     top:0;
@@ -26,7 +26,7 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     display: inline-block;
     margin-left: 20px;
     list-style-type: none;
@@ -64,11 +64,25 @@ body{
 }
 .name{
     font-size: 70px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .para{
     font-size:  25px;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 7px blue;
+    /* text-shadow: 2px 2px 7px blue; */
+}
+.python-txt{
+font-size: 30px;
+font-weight: 800;
+text-transform: uppercase;
+text-shadow: none;
+color: rgba(0, 38, 255, 0);
+/* stroke-width: 2px; */
+-webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(4, 0, 255);
+
 }
 /* .resume{
     padding: 5px 10px;
@@ -168,7 +182,7 @@ body{
 .about-para{
     animation: fade linear ;
     animation-timeline:view() ;
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 30%;
 }
 .about-head{
     font-size: 30px;
@@ -176,7 +190,7 @@ body{
     font-weight: 600;
     animation: fade linear ;
     animation-timeline:view() ;
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 30%;
 }
 
 .Education{
@@ -189,7 +203,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px 70px;
+    padding: 50px 70px;
     row-gap: 30px;
 }
 .edu-heading{
@@ -217,7 +231,7 @@ body{
     /* border: 2px solid black; */
     animation: fade linear;
     animation-timeline: view();
-    animation-range: entry 0%  cover 40%;
+    animation-range: entry 0%  cover 30%;
 }
 
 @keyframes fade{
@@ -268,7 +282,7 @@ body{
 }
 
 .skills{
-    padding-top: 30px;
+    padding-top: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -309,13 +323,13 @@ body{
 .skill-fig:nth-child(odd){
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 40%;
 
 }
 .skill-fig:nth-child(even){
     animation: appear1 linear;
     animation-timeline: view();
-    animation-range: entry 0%  cover 30%;
+    animation-range: entry 0%  cover 40%;
 }
 
 @keyframes appear1 {
@@ -373,7 +387,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 20px;
     row-gap: 20px;
     background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=996&t=st=1727249429~exp=1727250029~hmac=abdac3dd04e805df2f40f7f7bdd3fa624762697b633fbead030677d439f0ca2e');
 
@@ -406,7 +420,7 @@ body{
     overflow: hidden;
     animation: fade linear ;
     animation-timeline:view() ;
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 30%;
 }
 .pro-overlay{
     position: absolute;
@@ -440,6 +454,7 @@ body{
     color: white;
     background-color: blue;
     font-weight: 600;
+    cursor: pointer;
 }
 .project-img{
     height: 220px;
@@ -479,6 +494,7 @@ i{
 i:hover{
     color: rgb(30, 0, 255) ;
     text-shadow: 2px 2px 10px rgb(120, 47, 255);
+    transition: 0.5s ease;
 }
 
 
